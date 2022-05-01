@@ -1,0 +1,120 @@
+@import 'src/assets/theme/variables';
+
+.movieDetail {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  &__main-card {
+    color: $color_1;
+    width: 760px;
+    height: 390px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 770px;
+    background: $color_4;
+    background: -webkit-linear-gradient(to right, $color_3, $color_4);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from($color_3),
+      to($color_4)
+    );
+    background: -webkit-linear-gradient(left, $color_3, $color_4);
+    background: -o-linear-gradient(left, $color_3, $color_4);
+    background: linear-gradient(to right, $color_3, $color_4);
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  }
+
+  &__left-col {
+    width: 90%;
+  }
+
+  &__details {
+    width: 90%;
+    padding: 30px;
+    margin-top: -25px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  &__rating-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__highlight {
+    color: $color_2;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    background: $color_3;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 300ms ease-in-out;
+    width: max-content;
+  }
+
+  &__length {
+    color: $color_2;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+
+  &__description {
+    font-weight: 100;
+    line-height: 27px;
+    text-align: justify;
+  }
+
+  &__genres {
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__right-col {
+    border-radius: 2px;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+
+  &__img-overlay {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 244, 170, 0.4);
+    height: 100%;
+    top: 0;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+}

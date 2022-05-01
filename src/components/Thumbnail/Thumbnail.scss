@@ -1,0 +1,86 @@
+.thumbnail {
+  &__container {
+    margin: 5px;
+    margin-bottom: 40px;
+    padding: 20px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-blend-mode: color;
+    height: 400px;
+    box-shadow: 10px 10px 10px #111;
+    transition: background-color 0.25s linear;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    max-width: 90%;
+  }
+
+  &__title {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.24s ease-in 0, opacity 0.3s linear;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    max-height: 200px;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.24s ease-in 0.05s, opacity 0.3s linear;
+  }
+
+  &__imdb-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-end;
+    padding: 0 10px;
+  }
+
+  &__imdb {
+    width: max-content;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ebba33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.24s ease-in 0.4s, opacity 0.3s linear;
+  }
+
+  &__container:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .thumbnail__title,
+    .thumbnail__description,
+    .thumbnail__imdb {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media screen and (min-width: 694px) and (max-width: 915px) {
+    &__container {
+      max-width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 915px) {
+    &__container {
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+}

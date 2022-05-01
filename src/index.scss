@@ -1,0 +1,69 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'src/assets/theme/variables';
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background: linear-gradient(#f6f7fc 0%, #d5e1e8 40%);
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  text-align: center;
+
+  min-height: 100vh !important;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+.mouse-pt {
+  cursor: pointer !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+/* Scrollbar Styling  Start*/
+.scrollbar {
+  margin-bottom: 25px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 126, 110, 0.4) !important;
+  -webkit-border-radius: 10px !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px !important;
+  border-radius: 10px !important;
+  background: #007e6e !important;
+}

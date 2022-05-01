@@ -1,0 +1,41 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "sourceMap": true, // Generate corrresponding .map file
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs", // Specify module code generation
+    "target": "es6", // Specify ECMAScript target version
+    "pretty": true,
+    "jsx": "react", // Support JSX in .tsx files
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
+
+    "lib": ["dom", "dom.iterable", "esnext"], // List of library files to be included in the compilation
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true, // Enable all strict type checking options
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
+
+    "isolatedModules": true, // Unconditionally emit imports for unresolved files
+    "resolveJsonModule": true, // Include modules imported with .json extension
+    "noEmit": true, // Do not emit output (meaning do not compile code, only perform type checking)
+
+    "noImplicitAny": true,
+
+    "declaration": true, // Generate corresponding .d.ts file
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "src",
+    "paths": {
+      "src/*": ["*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.spec.ts", "./webpack.config.ts"]
+}
