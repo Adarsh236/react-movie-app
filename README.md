@@ -1,18 +1,5 @@
 # react-movie-app
 
-## Installation
-
----
-
-```sh
-$ git clone https://github.com/Adarsh236/react-movie-app.git react-movie-app
-$ cd react-movie-app
-$ npm i --legacy-peer-deps
-$ npm i
-$ npm run local
-$ npm run prod <-- To generate dist for production
-```
-
 # Overview
 
 ## Installation
