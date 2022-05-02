@@ -19,13 +19,11 @@
     max-width: 770px;
     background: $color_4;
     background: -webkit-linear-gradient(to right, $color_3, $color_4);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from($color_3),
-      to($color_4)
-    );
+    background: -webkit-gradient(linear,
+        left top,
+        right top,
+        from($color_3),
+        to($color_4));
     background: -webkit-linear-gradient(left, $color_3, $color_4);
     background: -o-linear-gradient(left, $color_3, $color_4);
     background: linear-gradient(to right, $color_3, $color_4);
@@ -41,6 +39,7 @@
     width: 100%;
     padding: 30px;
     margin-top: -25px;
+
     h1 {
       font-size: 30px;
     }

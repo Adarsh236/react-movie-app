@@ -75,34 +75,31 @@
   }
 
   @media (min-width: map-get($grid-breakpoints, md)) {
-    .thumbnail {
-      &__container {
-        max-width: 40%;
-      }
+    &__container {
+      max-width: 40%;
     }
   }
 
   @media (min-width: map-get($grid-breakpoints, lg)) {
-    .thumbnail {
-      &__container {
-        width: calc(100vw * 400 / 1440);
-        height: calc(100vw * 400 / 1440);
-        //max-width: 400px;
-        // max-height: 400px;
-      }
-
-      &__title {
-        font-size: calc(100vw * 30 / 1440);
-      }
-
-      &__imdb {
-        width: max-content;
-        height: calc(100vw * 30 / 1440);
-      }
-
-      &__description {
-        font-size: calc(100vw * 18 / 1440);
-      }
+    &__container {
+      width: calc(100vw * 400 / 1440);
+      height: calc(100vw * 400 / 1440);
+      //max-width: 400px;
+      // max-height: 400px;
     }
+
+    &__title {
+      font-size: calc(100vw * 30 / 1440);
+    }
+
+    &__imdb {
+      width: max-content;
+      height: calc(100vw * 30 / 1440);
+    }
+
+    &__description {
+      font-size: calc(100vw * 18 / 1440);
+    }
+
   }
 }
