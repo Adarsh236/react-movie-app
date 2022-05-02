@@ -53,6 +53,7 @@ class MovieDetail extends Component<TMovieDetailProps, any> {
                 </div>
               </div>
             </div>
+
             <div className="movieDetail__right-col">
               <div
                 className="movieDetail__img"

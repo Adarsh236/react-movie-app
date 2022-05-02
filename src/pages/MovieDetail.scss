@@ -4,13 +4,15 @@
   &__container {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   &__main-card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+
     color: $color_1;
-    width: 760px;
-    height: 390px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,11 +34,11 @@
   }
 
   &__left-col {
-    width: 90%;
+    width: 100%;
   }
 
   &__details {
-    width: 90%;
+    width: 100%;
     padding: 30px;
     margin-top: -25px;
     h1 {
@@ -86,11 +88,13 @@
   }
 
   &__right-col {
+    height: calc(100vw * 300 / 375);
+    width: 100%;
+    max-height: 420px;
+
     border-radius: 2px;
-    height: 100%;
     position: relative;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-    width: 400px;
     transition: transform 0.2s;
 
     &:hover {
@@ -115,6 +119,38 @@
 
     &:hover {
       opacity: 0;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .movieDetail {
+    &__container {
+      margin-top: 30px;
+    }
+
+    &__main-card {
+      flex-direction: row;
+    }
+
+    &__right-col {
+      height: 100%;
+    }
+
+    &__left-col {
+      width: 90%;
+    }
+
+    &__details {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .movieDetail {
+    &__container {
+      margin-top: 80px;
     }
   }
 }
