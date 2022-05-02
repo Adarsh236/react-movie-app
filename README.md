@@ -1,6 +1,39 @@
 # react-movie-app
 
-# Betsson Group: Movies Application
+## Installation
+
+---
+
+```sh
+$ git clone https://github.com/Adarsh236/react-movie-app.git react-movie-app
+$ cd react-movie-app
+$ npm i --legacy-peer-deps
+$ npm i
+$ npm run local
+$ npm run prod <-- To generate dist for production
+```
+
+# Overview
+
+## Installation
+
+```sh
+$ Install npm (`https://nodejs.org/en/download/`). To test npm version run: npm -v
+$ git clone https://github.com/Adarsh236/react-movie-app.git react-movie-app
+$ cd react-movie-app
+$ npm i --legacy-peer-deps
+$ npm i
+$ npm run local
+$ npm run prod <-- To generate dist for production
+```
+
+## Tools used in this Project
+
+```sh
+React, Typescript, Scss, Redux, Redux thunk, Webpack, Bootstrap, React Router, Babel, Eslint & Prettier.
+```
+
+# Task Description [ Betsson Group: Movies Application ]
 
 ## Scenario:
 
@@ -35,12 +68,12 @@ You may use any 3rd party libraries which can facilitate your development.
 
 #### Extra Credit
 
-- use [TypeScript](https://www.typescriptlang.org/) **\***
+- use [TypeScript](https://www.typescriptlang.org/)
 - use [Rxjs](https://rxjs-dev.firebaseapp.com/)
-- Filter by Genre **\***
+- Filter by Genre
 - Unit tests
-- Polished design **\***
-- Responsive design **\***
+- Polished design
+- Responsive design
 - Animations
 
 If you get the demo in good shape and have extra time, add your own flair and features.
